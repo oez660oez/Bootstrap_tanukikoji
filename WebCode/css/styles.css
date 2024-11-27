@@ -1,0 +1,80 @@
+body{
+    padding-top: 30px;
+  }
+    /* 不推薦用!important硬改顏色 */
+    .bg-primary{
+        background-color: orange !important;
+    }
+    .flexslider{
+      width: 80%;
+  }
+  .input-group{
+    max-width: 240px
+  }
+  .btn-primary {
+    background-color: rgb(115, 79, 79);
+    border-color: rgb(115, 79, 79);
+    color: white;
+    width: 250px;
+}
+.btn-primary:hover {
+  background-color: rgb(68, 39, 39);
+  color: white;
+}
+
+.btn-outline-primary {
+    border-color: rgb(115, 79, 79);
+    color: rgb(115, 79, 79);
+    width: 250px;
+}
+
+.btn-outline-primary:hover {
+    background-color: rgb(115, 79, 79);
+    color: white;
+}
+
+a{
+  color: rgb(115, 79, 79);
+}
+a:hover{
+  color: rgb(68, 39, 39);
+}
+/* 確保固定在頁面頂部後，導覽列內容居中對齊 */
+#product-navbar.fixed-top {
+  position: fixed;
+  top: 77px; /* 根據 header 高度設置 */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 可選，添加陰影效果 */
+  background-color: white;
+  z-index: 999;
+}
+
+/* 將連結顯示在左側 */
+#product-navbar .nav-links {
+  display: flex;
+}
+
+/* 將按鈕顯示在右側 */
+#product-navbar .btn-container {
+  display: flex;
+  align-items: center;
+}
+/* 滑鼠懸停在心形圖標上時變色 */
+.bi-heart:hover {
+  color: darkred;
+}
+
+/* 已加入最愛後心形圖標變為實心 */
+.bi-heart-fill {
+  color: red;
+}
+
+#ProductFavorite{
+  color: gray;
+}

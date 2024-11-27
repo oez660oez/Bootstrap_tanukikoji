@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>常見問題|狸小路</title>
+    <!-- Bootstrap.css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm p-2 mb-2 bg-body rounded"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./images/logo.avif" alt="logo" width="auto" height="50"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- me-auto靠左對齊、ms-auto靠右對齊、mx-auto置中 -->
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./about_us.html">關於狸小路</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  全部商品
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./product_list.html"
+                      >全部商品</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./product_list.html"
+                      >蛋糕系列</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./product_list.html"
+                      >千層系列</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./store.html">門市店鋪</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./faq.html">常見問題</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact_us.html">聯絡我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./favorite.html">我的最愛</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a
+                href="javascript:;"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="me-1 text-black"
+                ><i class="fs-4 bi bi-person"></i
+              ></a>
+              <a
+                class="me-1 text-black"
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
+              >
+                <i class="fs-4 bi bi-cart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- breadcrumb start -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb p-5 mb-2">
+        <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+        <li class="breadcrumb-item">
+          <a href="./product_list.html">全部商品</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          5.5吋小柳津抹茶塔
+        </li>
+      </ol>
+    </nav>
+
+    <!-- breadcrumb End  -->
+    <!-- 商品 start -->
+    <!-- .container>.row>.col-12.col-md-6*2 -->
+    <div class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="./images/g01.avif">
+                  <img src="./images/g01.avif" />
+                </li>
+                <li data-thumb="./images/g02.avif">
+                  <img src="./images/g02.avif" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 class="fw-bold">5.5吋小柳津抹茶塔</h3>
+            <p class="my-5">5.5吋抹茶塔有提供冷凍宅配到貨服務</p>
+            <p>建議售價</p>
+            <h3 class="text-danger fw-bold">NT$520</h3>
+            <p class="my-5">商品編號:</p>
+            <div class="input-group my-5">
+              <button class="btn btn-outline-secondary minus" type="button">
+                <i class="bi bi-dash"></i>
+              </button>
+              <input
+                type="text"
+                class="form-control text-center quantity"
+                value="1"
+                min="1"
+              />
+              <button class="btn btn-outline-secondary plus" type="button">
+                <i class="bi bi-plus"></i>
+              </button>
+            </div>
+            <button type="button" class="btn btn-outline-primary">
+              加入購物車
+            </button>
+            <button class="btn btn-primary" type="submit">立即購買</button>
+            <div class="myFavorite mt-5">
+              <button
+                type="button"
+                class="btn btn-outline-secondary rounded-pill px-3"
+              >
+                <i class="bi bi-heart-fill me-2" id="ProductFavorite"></i
+                >加入最愛
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- .container>.row>.col-12.col-md-4*3 -->
+    <div
+      id="product-navbar"
+      class="container mx-auto text-center py-2 border border-secondary"
+    >
+      <div class="nav-links">
+        <a href="#product-description" class="text-decoration-none me-3"
+          >商品介紹</a
+        >
+        <a href="#specifications" class="text-decoration-none me-3">規格說明</a>
+        <a href="#shipping" class="text-decoration-none">運送方式</a>
+      </div>
+      <div class="btn-container">
+        <button id="add-to-cart-button" class="btn btn-primary d-none">
+          加入購物車
+        </button>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row">
+        <h5
+          id="product-description"
+          class="border-start border-dark border-3 fw-bold ms-3 mb-3"
+        >
+          商品介紹
+        </h5>
+        <p>在絲滑柔順的抹茶慕斯周圍✨</p>
+        <p>圍繞可愛的淺綠抹茶香緹球🥰</p>
+        <p>中間藏著香Q的麻糬增添豐富食感</p>
+        <p>底層則是與抹茶最對味的紅豆可可</p>
+        <p>烘烤得酥脆的塔殼也融入了一抹綠</p>
+        <p>搭配熱氣蒸騰的拿鐵就是最完美的點心𝕊𝔼𝕋</p>
+        <img src="./images/g03.avif" alt="" class="my-3" />
+        <img src="./images/g04.avif" alt="" class="my-3" />
+        <img src="./images/g05.avif" alt="" class="my-3" />
+        <img src="./images/g06.avif" alt="" class="my-3" />
+        <img src="./images/g07.avif" alt="" class="my-3" />
+        <img src="./images/g08.avif" alt="" class="my-3" />
+        <img src="./images/g09.avif" alt="" class="my-3" />
+        <p>-</p>
+        <div class="my-3">
+          <p>凡購入5.5吋塔即贈MOGU KABI保冷袋</p>
+        </div>
+        <p>抹茶塔僅提供冷凍宅配到貨服務</p>
+        <p>與常溫商品不同溫層無法共同裝箱出貨</p>
+        <p>欲購買常溫及冷凍商品請分開下單</p>
+        <div class="my-3">
+          <p>FB-MOGU KABI</p>
+          <p>LINE-mogu2090097</p>
+        </div>
+        <h5
+          id="specifications"
+          class="border-start border-dark border-3 fw-bold ms-3 mb-3"
+        >
+          規格說明
+        </h5>
+        <p>淨重：500g ±10g</p>
+        <div class="my-3">
+          <p>▲賞味期參考：冷藏退冰後，3天內食用完畢風味最佳</p>
+          <p>▲退冰後不建議再返回冷凍，會影響口感</p>
+          <p>▲有效期限依商品外包裝日期為準</p>
+        </div>
+        <h5
+          id="shipping"
+          class="border-start border-dark border-3 fw-bold ms-3 mb-5"
+        >
+          運送方式
+        </h5>
+        <h5 class="border-start border-dark border-3 fw-bold ms-3 mb-3">
+          相關商品
+        </h5>
+      </div>
+    </div>
+
+    <!-- .container>.row>.col-md-4*3>img.w-100[src="./images/c-$$.avif"] -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <a href="product.html"
+            ><img src="./images/p02.avif" alt="" class="img-fluid mb-3"
+          /></a>
+          <p class="text-center mb-0">商品名稱</p>
+          <p class="text-center">價位</p>
+          <p class="text-center">
+            <a href="product.html" class="btn btn-outline-dark"
+              ><i class="text-secondary bi bi-cart-fill"></i>加入購物車</a
+            >
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <a href="product.html"
+            ><img src="./images/p03.avif" alt="" class="img-fluid mb-3"
+          /></a>
+          <p class="text-center mb-0">商品名稱</p>
+          <p class="text-center">價位</p>
+          <p class="text-center">
+            <a href="product.html" class="btn btn-outline-dark"
+              ><i class="text-secondary bi bi-cart-fill"></i>加入購物車</a
+            >
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <a href="product.html"
+            ><img src="./images/p04.avif" alt="" class="img-fluid mb-3"
+          /></a>
+          <p class="text-center mb-0">商品名稱</p>
+          <p class="text-center">價位</p>
+          <p class="text-center">
+            <a href="product.html" class="btn btn-outline-dark"
+              ><i class="text-secondary bi bi-cart-fill"></i>加入購物車</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 商品 end -->
+
+    <!-- footer Start -->
+    <footer class="bg-secondary py-5 mt-5">
+      <!-- .container>.row>.col-12.col-lg-4*3 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4 order-lg-3 text-center mb-4">
+            <a href="" class="btn btn-outline-light rounded-pill">冰淇淋教室</a>
+            <a href="" class="btn btn-outline-light rounded-pill">禮券專區</a>
+            <div class="mt-3">
+              <a href="" class="text-white fs-3 me-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="" class="text-white fs-3 me-2"
+                ><i class="bi bi-discord"></i
+              ></a>
+              <a href="" class="text-white fs-3 me-2"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="" class="text-white fs-3 me-2"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <!-- d-none隱藏、d-lg-block在large時顯示轉為block元素 -->
+          <div
+            class="d-none d-lg-block col-12 col-lg-4 order-lg-2 text-center fs-2 mt-3 text-white"
+          >
+            <img
+              src="./images/logo.avif"
+              alt="logo"
+              width="auto"
+              height="100"
+            />
+          </div>
+          <div class="col-12 col-lg-4 order-lg-1 text-white">
+            <p class="text-center fs-3 fw-bold mb-2">狸小路 歡樂服務專線</p>
+            <p class="text-center fs-3 fw-bold">0800-001-677</p>
+            <p class="text-center fs-6">
+              COPYRIGHT &copy; 狸小路 ALL RIGHTS RESERVED
+            </p>
+            <p class="text-center">
+              <a href="" class="text-white">隱私權政策</a>
+              <a href="" class="text-white">聯絡我們</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+
+    <!-- Modal Start -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- form start -->
+            <!-- js找needs-validation所以新增，novalidate取消預設驗證 -->
+            <!-- required必填欄位 -->
+            <form action="" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="account" class="form-label">電子郵件</label>
+                <input
+                  type="email"
+                  id="account"
+                  class="form-control"
+                  placeholder="請輸入電子郵件"
+                  required
+                />
+                <div class="invalid-feedback">
+                  信箱格式錯誤，格式為xxxx@gmail.com
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">密碼</label>
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  placeholder="請輸入密碼"
+                  required
+                />
+                <div class="invalid-feedback">密碼格式錯誤</div>
+              </div>
+              <div class="text-center">
+                <!-- input:submit -->
+                <input type="submit" class="btn btn-primary" value="登入" />
+              </div>
+            </form>
+
+            <!-- form end -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End -->
+
+    <!-- Offcanvas Start -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">購物車</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <p>您的購物車是空的</p>
+          <p>共0件商品</p>
+        </div>
+        <div class="dropdown mt-3">
+          <a href="product_list.html" class="btn btn-primary">繼續購物</a>
+          <a href="cart.html" class="btn btn-secondary">前往購物車</a>
+        </div>
+      </div>
+    </div>
+    <!-- Offcanvas End -->
+
+    <!-- pagetop start -->
+    <!-- a[href="#"].position-fixed.end-0.bottom-0.m-3.bg-primary.text-white.p-3.text-decoration-none{TOP} -->
+    <a
+      href="#"
+      class="position-fixed end-0 bottom-0 m-3 bg-white text-warning p-3 text-decoration-none rounded-circle border border-warning border border-2"
+      >TOP</a
+    >
+    <!-- pagetop end -->
+
+    <!-- Bootstrap.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+    <script src="./js/vaildation.js"></script>
+  </body>
+</html>
